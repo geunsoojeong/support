@@ -8,4 +8,14 @@ import com.billog.support.R;
 public class SignInActivity extends BaseActivity {
     @Override
     public int getLayoutId() { return R.layout.activity_signin; }
+
+    @Override
+    public void setupViews() {
+
+    }
+
+    @Override
+    public void init() {
+
+    }
 }

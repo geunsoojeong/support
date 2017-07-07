@@ -23,5 +23,12 @@ public abstract class BaseActivity extends Activity {
      */
     public abstract int getLayoutId();
 
+    /** 뷰 생성 및 바인딩
+     */
+    public abstract void setupViews();
 
+    /**
+     * 초기화
+     */
+    public abstract void init();
 }

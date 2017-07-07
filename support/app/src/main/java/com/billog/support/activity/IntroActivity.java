@@ -12,4 +12,14 @@ public class IntroActivity extends BaseActivity {
     public int getLayoutId() {
         return R.layout.activity_intro;
     }
+
+    @Override
+    public void setupViews() {
+
+    }
+
+    @Override
+    public void init() {
+
+    }
 }
