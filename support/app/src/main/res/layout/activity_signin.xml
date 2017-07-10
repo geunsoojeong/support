@@ -29,7 +29,7 @@
             android:layout_height="48dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:hin="ID/EMAIL" />
+            android:hint="ID/EMAIL" />
 
         <EditText
             android:id="@+id/edit_pw"
@@ -37,7 +37,7 @@
             android:layout_height="48dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:hin="PASSWORD" />
+            android:hint="PASSWORD" />
 
         <LinearLayout
             android:layout_width="match_parent"
