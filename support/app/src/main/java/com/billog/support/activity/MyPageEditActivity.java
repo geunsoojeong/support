@@ -9,4 +9,14 @@ import com.billog.support.R;
 public class MyPageEditActivity extends BaseActivity {
     @Override
     public int getLayoutId() { return R.layout.activity_signup; }
+
+    @Override
+    public void setupViews() {
+
+    }
+
+    @Override
+    public void init() {
+
+    }
 }
