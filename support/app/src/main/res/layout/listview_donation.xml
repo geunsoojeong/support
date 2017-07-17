@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="자세히보기 >"
+        android:layout_gravity="right|bottom"
+        android:gravity="right|bottom"
+        android:layout_marginRight="@dimen/text_size_30"/>
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgDnt"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="@dimen/text_size_30"
+        android:layout_marginRight="@dimen/text_size_30"
+        android:id="@+id/titleStr"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/text_size_30"
+        android:layout_marginRight="@dimen/text_size_30"
+        android:id="@+id/descStr"
+        android:gravity="center"
+        android:textSize="9dp"/>
+    
+</LinearLayout>

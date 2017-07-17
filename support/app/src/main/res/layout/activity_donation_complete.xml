@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_gray_247">
+
+    <include
+        android:id="@+id/layout_top_bar"
+        layout="@layout/layout_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/qrcode_icon_03" />
+
+                <TextView
+                    android:id="@+id/thankMsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/text_size_30"
+                    android:layout_marginTop="@dimen/text_size_25"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:text="OOO님께서 2017년07월17일\n기부하셧습니다. 갑사합니다^^" />
+
+                <TextView
+                    android:id="@+id/dona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/thankMsg"
+                    android:layout_marginRight="@dimen/text_size_30"
+                    android:gravity="right"
+                    android:text="- 기부처 올림 -" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dona"
+                    android:layout_marginLeft="@dimen/text_size_30"
+                    android:layout_marginTop="@dimen/text_size_11"
+                    android:gravity="center"
+                    android:text="결제완료 되신 기부처는 내가 후원한 기부처에서 확인 하실 수 있습니다."
+                    android:textSize="@dimen/text_size_8" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_size_25"
+                android:background="@color/text_white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/nowImgDnt"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="@dimen/text_size_11"
+                    android:src="@drawable/qrcode_icon_05" />
+
+                <TextView
+                    android:id="@+id/nowtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/text_size_20"
+                    android:layout_toRightOf="@+id/nowImgDnt"
+                    android:text="기부처 타이틀"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nowDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/nowtitle"
+                    android:layout_marginTop="@dimen/text_size_11"
+                    android:layout_toRightOf="@+id/nowImgDnt"
+                    android:text="기부처 정보가 간락하게 소개 되어집니다.기부처 정보가 간락하게 소개 되어집니다.기부처 정보가 간락하게 소개 되어집니다."
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/nowDtl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nowDesc"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/text_size_20"
+                    android:layout_marginTop="@dimen/text_size_11"
+                    android:text="더보기>"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="지난 후원 기부처"
+                android:layout_marginLeft="@dimen/text_size_25"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ListView
+                    android:id="@+id/donationListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
